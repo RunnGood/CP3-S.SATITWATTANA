@@ -12,7 +12,7 @@ def showMenu():
     print("2. Price Calculator")
 
 def menuSelect():
-    userSelected = int(input(">>"))
+    userSelected = int(input("Please Select No.>>"))
     if userSelected==1:
         print(vatCalculator(int(input())))
     if userSelected ==2:
@@ -30,10 +30,10 @@ def priceCalculator():
     return vatCalculator(price1+price2)
 
 if login()==True:
-   if showMenu()==True:
-        print(showMenu())
-   if menuSelect()==True:
-        print(menuSelect())
+        print("~WelCome~")
+        showMenu()
+        menuSelect()
+        print("Thank you")
 else:
     print("Please try again!!!!")
 
